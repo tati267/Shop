@@ -4,7 +4,7 @@ import CustomButton from "../button/button.components";
 
 import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
 
-import "./sign-up.styles.css";
+import "./sign-up.styles.scss";
 
 class SignUp extends React.Component {
   constructor() {
@@ -45,7 +45,7 @@ class SignUp extends React.Component {
     }
   };
 
-  handleSubmit = (event) => {
+  handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
   };
